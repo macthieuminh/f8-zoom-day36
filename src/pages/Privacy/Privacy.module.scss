@@ -1,0 +1,177 @@
+.page {
+    min-height: 100vh;
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 24px;
+}
+
+.card {
+    width: 100%;
+    max-width: 960px;
+    background-color: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 20px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 32px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #b5b5b5;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 600;
+    max-width: 18ch;
+}
+
+.badge {
+    border: 1px solid #f5f5f5;
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    align-self: center;
+}
+
+.intro {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d0d0d0;
+    max-width: 70ch;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: 32px;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.panel {
+    background-color: #121212;
+    border: 1px solid #1f1f1f;
+    border-radius: 18px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.panelTitle {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.panelBody {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #c7c7c7;
+}
+
+.panelList {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #e2e2e2;
+}
+
+.panelList li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.panelMeta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    color: #f5f5f5;
+}
+
+.panelMeta strong {
+    font-weight: 600;
+}
+
+.schedule {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.schedule li {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.schedule li span:first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #f5f5f5;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 32px;
+        gap: 32px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .badge {
+        align-self: flex-start;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
